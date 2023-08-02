@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Password Generator</h1>
+        <div class="box1">
+            <span id="passwd"></span>
+            <button id="copy">copy</button>
+        </div>
+        <div class="error">
+            <p>Please select at least one checkbox and the length should be greater than 7.</p>
+
+        </div>
+        <div class="box2">
+            <p>Minimum length should be 4</p>
+            <label for="">Enter length of password</label>
+            <input type="text" id="lengthIn" value="8" min="8" max="20">
+        </div>
+        <div class="box3">
+            <p>Check atleast one box</p>
+            <div class="box">
+                <label for="">Uppercase Letters</label>
+                <input type="checkbox" name="" id="upper" checked>
+            </div>
+            <div class="box">
+                <label for="">Lowercase Letters</label>
+                <input type="checkbox" name="" id="lower" checked>
+            </div>
+            <div class="box">
+                <label for=""> Numbers</label>
+                <input type="checkbox" name="" id="number" checked>
+            </div>
+            <div class="box">
+                <label for="">Symbols</label>
+                <input type="checkbox" name="" id="symbols" checked>
+            </div>
+        </div>
+        <div class="box4">
+            <button id="generatepass">Generate password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
